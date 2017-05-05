@@ -1,3 +1,4 @@
+#coding=utf-8
 from selenium import webdriver
 from htmlrunner import HTMLTestRunner
 import unittest,time
@@ -39,8 +40,8 @@ class ms90(object):
         report_file = open(r'C://Users/Administrator//Desktop//'+now+'testreport.html',"wb")
         runner = HTMLTestRunner(
             stream=report_file,
-            title="MS90×Ô¶¯»¯²âÊÔ±¨¸æ",
-            description="MS90×Ô¶¯»¯²âÊÔ¾ßÌå½á¹û£º")
+            title="è‡ªåŠ¨åŒ–æµ‹è¯•æŠ¥å‘Š",
+            description="è‡ªåŠ¨åŒ–æµ‹è¯•ç»“æœ")
         runner.run(test)
 if __name__ == "__main__":
     ms90().run()
